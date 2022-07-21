@@ -79,7 +79,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("BuyingGroupID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[BuyingGroupID])");
 
-                entity.Property(e => e.BuyingGroupName).HasMaxLength(50);
+                entity.Property(e => e.BuyingGroupName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.BuyingGroups)
@@ -108,7 +108,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("CityID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[CityID])");
 
-                entity.Property(e => e.CityName).HasMaxLength(51);
+                entity.Property(e => e.CityName).HasMaxLength(58);
 
                 entity.Property(e => e.StateProvinceId).HasColumnName("StateProvinceID");
 
@@ -172,7 +172,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("ColorID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[ColorID])");
 
-                entity.Property(e => e.ColorName).HasMaxLength(20);
+                entity.Property(e => e.ColorName).HasMaxLength(28);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.Colors)
@@ -205,19 +205,19 @@ namespace InfrastructureLayer {
                     .HasColumnName("CountryID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[CountryID])");
 
-                entity.Property(e => e.Continent).HasMaxLength(30);
+                entity.Property(e => e.Continent).HasMaxLength(38);
 
-                entity.Property(e => e.CountryName).HasMaxLength(60);
+                entity.Property(e => e.CountryName).HasMaxLength(68);
 
-                entity.Property(e => e.CountryType).HasMaxLength(20);
+                entity.Property(e => e.CountryType).HasMaxLength(28);
 
-                entity.Property(e => e.FormalName).HasMaxLength(60);
+                entity.Property(e => e.FormalName).HasMaxLength(68);
 
-                entity.Property(e => e.IsoAlpha3Code).HasMaxLength(3);
+                entity.Property(e => e.IsoAlpha3Code).HasMaxLength(11);
 
-                entity.Property(e => e.Region).HasMaxLength(30);
+                entity.Property(e => e.Region).HasMaxLength(38);
 
-                entity.Property(e => e.Subregion).HasMaxLength(30);
+                entity.Property(e => e.Subregion).HasMaxLength(38);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.Countries)
@@ -275,40 +275,40 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.CustomerCategoryId).HasColumnName("CustomerCategoryID");
 
-                entity.Property(e => e.CustomerName).HasMaxLength(100);
+                entity.Property(e => e.CustomerName).HasMaxLength(107);
 
-                entity.Property(e => e.DeliveryAddressLine1).HasMaxLength(60);
+                entity.Property(e => e.DeliveryAddressLine1).HasMaxLength(68);
 
-                entity.Property(e => e.DeliveryAddressLine2).HasMaxLength(60);
+                entity.Property(e => e.DeliveryAddressLine2).HasMaxLength(68);
 
                 entity.Property(e => e.DeliveryCityId).HasColumnName("DeliveryCityID");
 
                 entity.Property(e => e.DeliveryMethodId).HasColumnName("DeliveryMethodID");
 
-                entity.Property(e => e.DeliveryPostalCode).HasMaxLength(10);
+                entity.Property(e => e.DeliveryPostalCode).HasMaxLength(18);
 
-                entity.Property(e => e.DeliveryRun).HasMaxLength(5);
+                entity.Property(e => e.DeliveryRun).HasMaxLength(11);
 
-                entity.Property(e => e.FaxNumber).HasMaxLength(20);
+                entity.Property(e => e.FaxNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+                entity.Property(e => e.PhoneNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PostalAddressLine1).HasMaxLength(60);
+                entity.Property(e => e.PostalAddressLine1).HasMaxLength(68);
 
-                entity.Property(e => e.PostalAddressLine2).HasMaxLength(60);
+                entity.Property(e => e.PostalAddressLine2).HasMaxLength(68);
 
                 entity.Property(e => e.PostalCityId).HasColumnName("PostalCityID");
 
-                entity.Property(e => e.PostalPostalCode).HasMaxLength(10);
+                entity.Property(e => e.PostalPostalCode).HasMaxLength(18);
 
                 entity.Property(e => e.PrimaryContactPersonId).HasColumnName("PrimaryContactPersonID");
 
-                entity.Property(e => e.RunPosition).HasMaxLength(5);
+                entity.Property(e => e.RunPosition).HasMaxLength(11);
 
                 entity.Property(e => e.StandardDiscountPercentage).HasColumnType("decimal(18, 3)");
 
                 entity.Property(e => e.WebsiteUrl)
-                    .HasMaxLength(256)
+                    .HasMaxLength(264)
                     .HasColumnName("WebsiteURL");
 
                 entity.HasOne(d => d.AlternateContactPerson)
@@ -369,32 +369,32 @@ namespace InfrastructureLayer {
 
                 entity.ToView("Customers", "Website");
 
-                entity.Property(e => e.AlternateContact).HasMaxLength(50);
+                entity.Property(e => e.AlternateContact).HasMaxLength(58);
 
-                entity.Property(e => e.BuyingGroupName).HasMaxLength(50);
+                entity.Property(e => e.BuyingGroupName).HasMaxLength(58);
 
-                entity.Property(e => e.CityName).HasMaxLength(50);
+                entity.Property(e => e.CityName).HasMaxLength(58);
 
-                entity.Property(e => e.CustomerCategoryName).HasMaxLength(50);
+                entity.Property(e => e.CustomerCategoryName).HasMaxLength(58);
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
-                entity.Property(e => e.CustomerName).HasMaxLength(100);
+                entity.Property(e => e.CustomerName).HasMaxLength(107);
 
-                entity.Property(e => e.DeliveryMethod).HasMaxLength(50);
+                entity.Property(e => e.DeliveryMethod).HasMaxLength(58);
 
-                entity.Property(e => e.DeliveryRun).HasMaxLength(5);
+                entity.Property(e => e.DeliveryRun).HasMaxLength(11);
 
-                entity.Property(e => e.FaxNumber).HasMaxLength(20);
+                entity.Property(e => e.FaxNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+                entity.Property(e => e.PhoneNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PrimaryContact).HasMaxLength(50);
+                entity.Property(e => e.PrimaryContact).HasMaxLength(58);
 
-                entity.Property(e => e.RunPosition).HasMaxLength(5);
+                entity.Property(e => e.RunPosition).HasMaxLength(11);
 
                 entity.Property(e => e.WebsiteUrl)
-                    .HasMaxLength(256)
+                    .HasMaxLength(264)
                     .HasColumnName("WebsiteURL");
             });
 
@@ -419,7 +419,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("CustomerCategoryID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[CustomerCategoryID])");
 
-                entity.Property(e => e.CustomerCategoryName).HasMaxLength(50);
+                entity.Property(e => e.CustomerCategoryName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.CustomerCategories)
@@ -526,7 +526,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("DeliveryMethodID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[DeliveryMethodID])");
 
-                entity.Property(e => e.DeliveryMethodName).HasMaxLength(50);
+                entity.Property(e => e.DeliveryMethodName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.DeliveryMethods)
@@ -574,11 +574,11 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
-                entity.Property(e => e.CustomerPurchaseOrderNumber).HasMaxLength(20);
+                entity.Property(e => e.CustomerPurchaseOrderNumber).HasMaxLength(28);
 
                 entity.Property(e => e.DeliveryMethodId).HasColumnName("DeliveryMethodID");
 
-                entity.Property(e => e.DeliveryRun).HasMaxLength(5);
+                entity.Property(e => e.DeliveryRun).HasMaxLength(11);
 
                 entity.Property(e => e.InvoiceDate).HasColumnType("date");
 
@@ -588,7 +588,7 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.PackedByPersonId).HasColumnName("PackedByPersonID");
 
-                entity.Property(e => e.RunPosition).HasMaxLength(5);
+                entity.Property(e => e.RunPosition).HasMaxLength(11);
 
                 entity.Property(e => e.SalespersonPersonId).HasColumnName("SalespersonPersonID");
 
@@ -659,7 +659,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("InvoiceLineID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[InvoiceLineID])");
 
-                entity.Property(e => e.Description).HasMaxLength(100);
+                entity.Property(e => e.Description).HasMaxLength(107);
 
                 entity.Property(e => e.ExtendedPrice).HasColumnType("decimal(18, 2)");
 
@@ -725,7 +725,7 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
-                entity.Property(e => e.CustomerPurchaseOrderNumber).HasMaxLength(20);
+                entity.Property(e => e.CustomerPurchaseOrderNumber).HasMaxLength(28);
 
                 entity.Property(e => e.ExpectedDeliveryDate).HasColumnType("date");
 
@@ -789,7 +789,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("OrderLineID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[OrderLineID])");
 
-                entity.Property(e => e.Description).HasMaxLength(100);
+                entity.Property(e => e.Description).HasMaxLength(107);
 
                 entity.Property(e => e.LastEditedWhen).HasDefaultValueSql("(sysdatetime())");
 
@@ -849,7 +849,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("PackageTypeID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[PackageTypeID])");
 
-                entity.Property(e => e.PackageTypeName).HasMaxLength(50);
+                entity.Property(e => e.PackageTypeName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.PackageTypes)
@@ -879,7 +879,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("PaymentMethodID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[PaymentMethodID])");
 
-                entity.Property(e => e.PaymentMethodName).HasMaxLength(50);
+                entity.Property(e => e.PaymentMethodName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.PaymentMethods)
@@ -914,22 +914,22 @@ namespace InfrastructureLayer {
                     .HasColumnName("PersonID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[PersonID])");
 
-                entity.Property(e => e.EmailAddress).HasMaxLength(256);
+                entity.Property(e => e.EmailAddress).HasMaxLength(264);
 
-                entity.Property(e => e.FaxNumber).HasMaxLength(20);
+                entity.Property(e => e.FaxNumber).HasMaxLength(28);
 
-                entity.Property(e => e.FullName).HasMaxLength(50);
+                entity.Property(e => e.FullName).HasMaxLength(58);
 
-                entity.Property(e => e.LogonName).HasMaxLength(50);
+                entity.Property(e => e.LogonName).HasMaxLength(58);
 
                 entity.Property(e => e.OtherLanguages).HasComputedColumnSql("(json_query([CustomFields],N'$.OtherLanguages'))", false);
 
-                entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+                entity.Property(e => e.PhoneNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PreferredName).HasMaxLength(50);
+                entity.Property(e => e.PreferredName).HasMaxLength(58);
 
                 entity.Property(e => e.SearchName)
-                    .HasMaxLength(101)
+                    .HasMaxLength(107)
                     .HasComputedColumnSql("(concat([PreferredName],N' ',[FullName]))", true);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
@@ -964,7 +964,7 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
 
-                entity.Property(e => e.SupplierReference).HasMaxLength(20);
+                entity.Property(e => e.SupplierReference).HasMaxLength(28);
 
                 entity.HasOne(d => d.ContactPerson)
                     .WithMany(p => p.PurchaseOrderContactPeople)
@@ -1006,7 +1006,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("PurchaseOrderLineID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[PurchaseOrderLineID])");
 
-                entity.Property(e => e.Description).HasMaxLength(100);
+                entity.Property(e => e.Description).HasMaxLength(107);
 
                 entity.Property(e => e.ExpectedUnitPricePerOuter).HasColumnType("decimal(18, 2)");
 
@@ -1068,7 +1068,7 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
-                entity.Property(e => e.DealDescription).HasMaxLength(30);
+                entity.Property(e => e.DealDescription).HasMaxLength(38);
 
                 entity.Property(e => e.DiscountAmount).HasColumnType("decimal(18, 2)");
 
@@ -1145,11 +1145,11 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.CountryId).HasColumnName("CountryID");
 
-                entity.Property(e => e.SalesTerritory).HasMaxLength(50);
+                entity.Property(e => e.SalesTerritory).HasMaxLength(58);
 
-                entity.Property(e => e.StateProvinceCode).HasMaxLength(5);
+                entity.Property(e => e.StateProvinceCode).HasMaxLength(11);
 
-                entity.Property(e => e.StateProvinceName).HasMaxLength(50);
+                entity.Property(e => e.StateProvinceName).HasMaxLength(58);
 
                 entity.HasOne(d => d.Country)
                     .WithMany(p => p.StateProvinces)
@@ -1185,7 +1185,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("StockGroupID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[StockGroupID])");
 
-                entity.Property(e => e.StockGroupName).HasMaxLength(50);
+                entity.Property(e => e.StockGroupName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.StockGroups)
@@ -1223,9 +1223,9 @@ namespace InfrastructureLayer {
                     .HasColumnName("StockItemID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[StockItemID])");
 
-                entity.Property(e => e.Barcode).HasMaxLength(50);
+                entity.Property(e => e.Barcode).HasMaxLength(58);
 
-                entity.Property(e => e.Brand).HasMaxLength(50);
+                entity.Property(e => e.Brand).HasMaxLength(58);
 
                 entity.Property(e => e.ColorId).HasColumnName("ColorID");
 
@@ -1235,9 +1235,9 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.SearchDetails).HasComputedColumnSql("(concat([StockItemName],N' ',[MarketingComments]))", false);
 
-                entity.Property(e => e.Size).HasMaxLength(20);
+                entity.Property(e => e.Size).HasMaxLength(28);
 
-                entity.Property(e => e.StockItemName).HasMaxLength(100);
+                entity.Property(e => e.StockItemName).HasMaxLength(107);
 
                 entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
 
@@ -1291,7 +1291,7 @@ namespace InfrastructureLayer {
                     .ValueGeneratedNever()
                     .HasColumnName("StockItemID");
 
-                entity.Property(e => e.BinLocation).HasMaxLength(20);
+                entity.Property(e => e.BinLocation).HasMaxLength(28);
 
                 entity.Property(e => e.LastCostPrice).HasColumnType("decimal(18, 2)");
 
@@ -1461,48 +1461,48 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.AlternateContactPersonId).HasColumnName("AlternateContactPersonID");
 
-                entity.Property(e => e.BankAccountBranch).HasMaxLength(50);
+                entity.Property(e => e.BankAccountBranch).HasMaxLength(58);
 
-                entity.Property(e => e.BankAccountCode).HasMaxLength(20);
+                entity.Property(e => e.BankAccountCode).HasMaxLength(28);
 
-                entity.Property(e => e.BankAccountName).HasMaxLength(50);
+                entity.Property(e => e.BankAccountName).HasMaxLength(58);
 
-                entity.Property(e => e.BankAccountNumber).HasMaxLength(20);
+                entity.Property(e => e.BankAccountNumber).HasMaxLength(28);
 
-                entity.Property(e => e.BankInternationalCode).HasMaxLength(20);
+                entity.Property(e => e.BankInternationalCode).HasMaxLength(28);
 
-                entity.Property(e => e.DeliveryAddressLine1).HasMaxLength(60);
+                entity.Property(e => e.DeliveryAddressLine1).HasMaxLength(68);
 
-                entity.Property(e => e.DeliveryAddressLine2).HasMaxLength(60);
+                entity.Property(e => e.DeliveryAddressLine2).HasMaxLength(68);
 
                 entity.Property(e => e.DeliveryCityId).HasColumnName("DeliveryCityID");
 
                 entity.Property(e => e.DeliveryMethodId).HasColumnName("DeliveryMethodID");
 
-                entity.Property(e => e.DeliveryPostalCode).HasMaxLength(10);
+                entity.Property(e => e.DeliveryPostalCode).HasMaxLength(18);
 
-                entity.Property(e => e.FaxNumber).HasMaxLength(20);
+                entity.Property(e => e.FaxNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+                entity.Property(e => e.PhoneNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PostalAddressLine1).HasMaxLength(60);
+                entity.Property(e => e.PostalAddressLine1).HasMaxLength(68);
 
-                entity.Property(e => e.PostalAddressLine2).HasMaxLength(60);
+                entity.Property(e => e.PostalAddressLine2).HasMaxLength(68);
 
                 entity.Property(e => e.PostalCityId).HasColumnName("PostalCityID");
 
-                entity.Property(e => e.PostalPostalCode).HasMaxLength(10);
+                entity.Property(e => e.PostalPostalCode).HasMaxLength(18);
 
                 entity.Property(e => e.PrimaryContactPersonId).HasColumnName("PrimaryContactPersonID");
 
                 entity.Property(e => e.SupplierCategoryId).HasColumnName("SupplierCategoryID");
 
-                entity.Property(e => e.SupplierName).HasMaxLength(100);
+                entity.Property(e => e.SupplierName).HasMaxLength(107);
 
-                entity.Property(e => e.SupplierReference).HasMaxLength(20);
+                entity.Property(e => e.SupplierReference).HasMaxLength(28);
 
                 entity.Property(e => e.WebsiteUrl)
-                    .HasMaxLength(256)
+                    .HasMaxLength(264)
                     .HasColumnName("WebsiteURL");
 
                 entity.HasOne(d => d.AlternateContactPerson)
@@ -1552,28 +1552,28 @@ namespace InfrastructureLayer {
 
                 entity.ToView("Suppliers", "Website");
 
-                entity.Property(e => e.AlternateContact).HasMaxLength(50);
+                entity.Property(e => e.AlternateContact).HasMaxLength(58);
 
-                entity.Property(e => e.CityName).HasMaxLength(50);
+                entity.Property(e => e.CityName).HasMaxLength(58);
 
-                entity.Property(e => e.DeliveryMethod).HasMaxLength(50);
+                entity.Property(e => e.DeliveryMethod).HasMaxLength(58);
 
-                entity.Property(e => e.FaxNumber).HasMaxLength(20);
+                entity.Property(e => e.FaxNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+                entity.Property(e => e.PhoneNumber).HasMaxLength(28);
 
-                entity.Property(e => e.PrimaryContact).HasMaxLength(50);
+                entity.Property(e => e.PrimaryContact).HasMaxLength(58);
 
-                entity.Property(e => e.SupplierCategoryName).HasMaxLength(50);
+                entity.Property(e => e.SupplierCategoryName).HasMaxLength(58);
 
                 entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
 
-                entity.Property(e => e.SupplierName).HasMaxLength(100);
+                entity.Property(e => e.SupplierName).HasMaxLength(107);
 
-                entity.Property(e => e.SupplierReference).HasMaxLength(20);
+                entity.Property(e => e.SupplierReference).HasMaxLength(28);
 
                 entity.Property(e => e.WebsiteUrl)
-                    .HasMaxLength(256)
+                    .HasMaxLength(264)
                     .HasColumnName("WebsiteURL");
             });
 
@@ -1598,7 +1598,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("SupplierCategoryID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[SupplierCategoryID])");
 
-                entity.Property(e => e.SupplierCategoryName).HasMaxLength(50);
+                entity.Property(e => e.SupplierCategoryName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.SupplierCategories)
@@ -1647,7 +1647,7 @@ namespace InfrastructureLayer {
 
                 entity.Property(e => e.SupplierId).HasColumnName("SupplierID");
 
-                entity.Property(e => e.SupplierInvoiceNumber).HasMaxLength(20);
+                entity.Property(e => e.SupplierInvoiceNumber).HasMaxLength(28);
 
                 entity.Property(e => e.TaxAmount).HasColumnType("decimal(18, 2)");
 
@@ -1697,23 +1697,23 @@ namespace InfrastructureLayer {
                     .HasColumnName("SystemParameterID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[SystemParameterID])");
 
-                entity.Property(e => e.DeliveryAddressLine1).HasMaxLength(60);
+                entity.Property(e => e.DeliveryAddressLine1).HasMaxLength(68);
 
-                entity.Property(e => e.DeliveryAddressLine2).HasMaxLength(60);
+                entity.Property(e => e.DeliveryAddressLine2).HasMaxLength(68);
 
                 entity.Property(e => e.DeliveryCityId).HasColumnName("DeliveryCityID");
 
-                entity.Property(e => e.DeliveryPostalCode).HasMaxLength(10);
+                entity.Property(e => e.DeliveryPostalCode).HasMaxLength(18);
 
                 entity.Property(e => e.LastEditedWhen).HasDefaultValueSql("(sysdatetime())");
 
-                entity.Property(e => e.PostalAddressLine1).HasMaxLength(60);
+                entity.Property(e => e.PostalAddressLine1).HasMaxLength(68);
 
-                entity.Property(e => e.PostalAddressLine2).HasMaxLength(60);
+                entity.Property(e => e.PostalAddressLine2).HasMaxLength(68);
 
                 entity.Property(e => e.PostalCityId).HasColumnName("PostalCityID");
 
-                entity.Property(e => e.PostalPostalCode).HasMaxLength(10);
+                entity.Property(e => e.PostalPostalCode).HasMaxLength(18);
 
                 entity.HasOne(d => d.DeliveryCity)
                     .WithMany(p => p.SystemParameterDeliveryCities)
@@ -1755,7 +1755,7 @@ namespace InfrastructureLayer {
                     .HasColumnName("TransactionTypeID")
                     .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[TransactionTypeID])");
 
-                entity.Property(e => e.TransactionTypeName).HasMaxLength(50);
+                entity.Property(e => e.TransactionTypeName).HasMaxLength(58);
 
                 entity.HasOne(d => d.LastEditedByNavigation)
                     .WithMany(p => p.TransactionTypes)
@@ -1776,13 +1776,13 @@ namespace InfrastructureLayer {
                 entity.Property(e => e.VehicleTemperatureId).HasColumnName("VehicleTemperatureID");
 
                 entity.Property(e => e.FullSensorData)
-                    .HasMaxLength(1000)
+                    .HasMaxLength(1008)
                     .UseCollation("Latin1_General_CI_AS");
 
                 entity.Property(e => e.Temperature).HasColumnType("decimal(10, 2)");
 
                 entity.Property(e => e.VehicleRegistration)
-                    .HasMaxLength(20)
+                    .HasMaxLength(28)
                     .UseCollation("Latin1_General_CI_AS");
             });
 
@@ -1791,11 +1791,11 @@ namespace InfrastructureLayer {
 
                 entity.ToView("VehicleTemperatures", "Website");
 
-                entity.Property(e => e.FullSensorData).HasMaxLength(1000);
+                entity.Property(e => e.FullSensorData).HasMaxLength(1008);
 
                 entity.Property(e => e.Temperature).HasColumnType("decimal(10, 2)");
 
-                entity.Property(e => e.VehicleRegistration).HasMaxLength(20);
+                entity.Property(e => e.VehicleRegistration).HasMaxLength(28);
 
                 entity.Property(e => e.VehicleTemperatureId)
                     .ValueGeneratedOnAdd()

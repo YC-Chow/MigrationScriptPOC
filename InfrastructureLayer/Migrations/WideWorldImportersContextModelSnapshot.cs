@@ -112,8 +112,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("BuyingGroupName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -160,8 +160,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("CityName")
                         .IsRequired()
-                        .HasMaxLength(51)
-                        .HasColumnType("nvarchar(51)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -271,8 +271,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("ColorName")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -322,26 +322,26 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("Continent")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(38)
+                        .HasColumnType("nvarchar(38)");
 
                     b.Property<string>("CountryName")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("CountryType")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("FormalName")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("IsoAlpha3Code")
-                        .HasMaxLength(3)
-                        .HasColumnType("nvarchar(3)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<int?>("IsoNumericCode")
                         .HasColumnType("int");
@@ -354,13 +354,13 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("Region")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(38)
+                        .HasColumnType("nvarchar(38)");
 
                     b.Property<string>("Subregion")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(38)
+                        .HasColumnType("nvarchar(38)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -429,17 +429,17 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<string>("DeliveryAddressLine1")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("DeliveryAddressLine2")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<int>("DeliveryCityId")
                         .HasColumnType("int")
@@ -454,17 +454,17 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("DeliveryPostalCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("DeliveryRun")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("FaxNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<bool>("IsOnCreditHold")
                         .HasColumnType("bit");
@@ -480,17 +480,17 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("PostalAddressLine1")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("PostalAddressLine2")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<int>("PostalCityId")
                         .HasColumnType("int")
@@ -498,16 +498,16 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PostalPostalCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<int>("PrimaryContactPersonId")
                         .HasColumnType("int")
                         .HasColumnName("PrimaryContactPersonID");
 
                     b.Property<string>("RunPosition")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<decimal>("StandardDiscountPercentage")
                         .HasColumnType("decimal(18,3)");
@@ -524,8 +524,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("WebsiteUrl")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(264)
+                        .HasColumnType("nvarchar(264)")
                         .HasColumnName("WebsiteURL");
 
                     b.HasKey("CustomerId");
@@ -571,20 +571,20 @@ namespace InfrastructureLayer.Migrations
             modelBuilder.Entity("InfrastructureLayer.Customer1", b =>
                 {
                     b.Property<string>("AlternateContact")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("BuyingGroupName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("CityName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("CustomerCategoryName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int>("CustomerId")
                         .HasColumnType("int")
@@ -592,42 +592,42 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("CustomerName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<Geometry>("DeliveryLocation")
                         .HasColumnType("geography");
 
                     b.Property<string>("DeliveryMethod")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("DeliveryRun")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("FaxNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("PrimaryContact")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("RunPosition")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("WebsiteUrl")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(264)
+                        .HasColumnType("nvarchar(264)")
                         .HasColumnName("WebsiteURL");
 
                     b.ToView("Customers", "Website");
@@ -643,8 +643,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("CustomerCategoryName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -778,8 +778,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("DeliveryMethodName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -858,8 +858,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnName("CustomerID");
 
                     b.Property<string>("CustomerPurchaseOrderNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("DeliveryInstructions")
                         .HasColumnType("nvarchar(max)");
@@ -869,8 +869,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnName("DeliveryMethodID");
 
                     b.Property<string>("DeliveryRun")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("InternalComments")
                         .HasColumnType("nvarchar(max)");
@@ -901,8 +901,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RunPosition")
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<int>("SalespersonPersonId")
                         .HasColumnType("int")
@@ -949,8 +949,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<decimal>("ExtendedPrice")
                         .HasColumnType("decimal(18,2)");
@@ -1027,8 +1027,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnName("CustomerID");
 
                     b.Property<string>("CustomerPurchaseOrderNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("DeliveryInstructions")
                         .HasColumnType("nvarchar(max)");
@@ -1091,8 +1091,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -1159,8 +1159,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PackageTypeName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -1207,8 +1207,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PaymentMethodName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -1254,17 +1254,17 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EmailAddress")
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)");
+                        .HasMaxLength(264)
+                        .HasColumnType("nvarchar(264)");
 
                     b.Property<string>("FaxNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<byte[]>("HashedPassword")
                         .HasColumnType("varbinary(max)");
@@ -1288,8 +1288,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("LogonName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("OtherLanguages")
                         .ValueGeneratedOnAddOrUpdate()
@@ -1297,22 +1297,22 @@ namespace InfrastructureLayer.Migrations
                         .HasComputedColumnSql("(json_query([CustomFields],N'$.OtherLanguages'))", false);
 
                     b.Property<string>("PhoneNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<byte[]>("Photo")
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("PreferredName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("SearchName")
                         .IsRequired()
                         .ValueGeneratedOnAddOrUpdate()
-                        .HasMaxLength(101)
-                        .HasColumnType("nvarchar(101)")
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)")
                         .HasComputedColumnSql("(concat([PreferredName],N' ',[FullName]))", true);
 
                     b.Property<string>("UserPreferences")
@@ -1399,8 +1399,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnName("SupplierID");
 
                     b.Property<string>("SupplierReference")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.HasKey("PurchaseOrderId");
 
@@ -1425,8 +1425,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<decimal?>("ExpectedUnitPricePerOuter")
                         .HasColumnType("decimal(18,2)");
@@ -1500,8 +1500,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("DealDescription")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasMaxLength(38)
+                        .HasColumnType("nvarchar(38)");
 
                     b.Property<decimal?>("DiscountAmount")
                         .HasColumnType("decimal(18,2)");
@@ -1574,18 +1574,18 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("SalesTerritory")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("StateProvinceCode")
                         .IsRequired()
-                        .HasMaxLength(5)
-                        .HasColumnType("nvarchar(5)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("StateProvinceName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -1636,8 +1636,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("StockGroupName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -1680,12 +1680,12 @@ namespace InfrastructureLayer.Migrations
                         .HasDefaultValueSql("(NEXT VALUE FOR [Sequences].[StockItemID])");
 
                     b.Property<string>("Barcode")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("Brand")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int?>("ColorId")
                         .HasColumnType("int")
@@ -1729,13 +1729,13 @@ namespace InfrastructureLayer.Migrations
                         .HasComputedColumnSql("(concat([StockItemName],N' ',[MarketingComments]))", false);
 
                     b.Property<string>("Size")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("StockItemName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<int>("SupplierId")
                         .HasColumnType("int")
@@ -1807,8 +1807,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("BinLocation")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<decimal>("LastCostPrice")
                         .HasColumnType("decimal(18,2)");
@@ -1959,33 +1959,33 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnName("AlternateContactPersonID");
 
                     b.Property<string>("BankAccountBranch")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("BankAccountCode")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("BankAccountName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("BankAccountNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("BankInternationalCode")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("DeliveryAddressLine1")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("DeliveryAddressLine2")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<int>("DeliveryCityId")
                         .HasColumnType("int")
@@ -2000,13 +2000,13 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("DeliveryPostalCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("FaxNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("InternalComments")
                         .HasColumnType("nvarchar(max)");
@@ -2019,17 +2019,17 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("PostalAddressLine1")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("PostalAddressLine2")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<int>("PostalCityId")
                         .HasColumnType("int")
@@ -2037,8 +2037,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PostalPostalCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<int>("PrimaryContactPersonId")
                         .HasColumnType("int")
@@ -2050,12 +2050,12 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("SupplierName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<string>("SupplierReference")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -2069,8 +2069,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("WebsiteUrl")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(264)
+                        .HasColumnType("nvarchar(264)")
                         .HasColumnName("WebsiteURL");
 
                     b.HasKey("SupplierId");
@@ -2110,37 +2110,37 @@ namespace InfrastructureLayer.Migrations
             modelBuilder.Entity("InfrastructureLayer.Supplier1", b =>
                 {
                     b.Property<string>("AlternateContact")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("CityName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<Geometry>("DeliveryLocation")
                         .HasColumnType("geography");
 
                     b.Property<string>("DeliveryMethod")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("FaxNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("PrimaryContact")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<string>("SupplierCategoryName")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<int>("SupplierId")
                         .HasColumnType("int")
@@ -2148,17 +2148,17 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("SupplierName")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(107)
+                        .HasColumnType("nvarchar(107)");
 
                     b.Property<string>("SupplierReference")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<string>("WebsiteUrl")
                         .IsRequired()
-                        .HasMaxLength(256)
-                        .HasColumnType("nvarchar(256)")
+                        .HasMaxLength(264)
+                        .HasColumnType("nvarchar(264)")
                         .HasColumnName("WebsiteURL");
 
                     b.ToView("Suppliers", "Website");
@@ -2177,8 +2177,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("SupplierCategoryName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -2255,8 +2255,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnName("SupplierID");
 
                     b.Property<string>("SupplierInvoiceNumber")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<decimal>("TaxAmount")
                         .HasColumnType("decimal(18,2)");
@@ -2317,12 +2317,12 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("DeliveryAddressLine1")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("DeliveryAddressLine2")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<int>("DeliveryCityId")
                         .HasColumnType("int")
@@ -2334,8 +2334,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("DeliveryPostalCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.Property<int>("LastEditedBy")
                         .HasColumnType("int");
@@ -2347,12 +2347,12 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PostalAddressLine1")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<string>("PostalAddressLine2")
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
+                        .HasMaxLength(68)
+                        .HasColumnType("nvarchar(68)");
 
                     b.Property<int>("PostalCityId")
                         .HasColumnType("int")
@@ -2360,8 +2360,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("PostalPostalCode")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(18)
+                        .HasColumnType("nvarchar(18)");
 
                     b.HasKey("SystemParameterId");
 
@@ -2387,8 +2387,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("TransactionTypeName")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasMaxLength(58)
+                        .HasColumnType("nvarchar(58)");
 
                     b.Property<DateTime>("ValidFrom")
                         .ValueGeneratedOnAddOrUpdate()
@@ -2438,8 +2438,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("FullSensorData")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)")
+                        .HasMaxLength(1008)
+                        .HasColumnType("nvarchar(1008)")
                         .UseCollation("Latin1_General_CI_AS");
 
                     b.Property<bool>("IsCompressed")
@@ -2453,8 +2453,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("VehicleRegistration")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)")
                         .UseCollation("Latin1_General_CI_AS");
 
                     b.HasKey("VehicleTemperatureId")
@@ -2473,8 +2473,8 @@ namespace InfrastructureLayer.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("FullSensorData")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasMaxLength(1008)
+                        .HasColumnType("nvarchar(1008)");
 
                     b.Property<DateTime>("RecordedWhen")
                         .HasColumnType("datetime2");
@@ -2484,8 +2484,8 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<string>("VehicleRegistration")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
+                        .HasMaxLength(28)
+                        .HasColumnType("nvarchar(28)");
 
                     b.Property<long>("VehicleTemperatureId")
                         .ValueGeneratedOnAdd()
